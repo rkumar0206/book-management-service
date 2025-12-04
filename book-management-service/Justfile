@@ -1,11 +1,8 @@
-# Run FastAPI in dev mode
 dev:
     . .venv/bin/activate && uv run uvicorn main:app --port 7000 --reload
 
-# Run Ruff linter
 lint:
     . .venv/bin/activate && ruff check .
 
-# Run BasedPyright type checker
 typecheck:
     . .venv/bin/activate && basedpyright .
