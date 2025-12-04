@@ -9,6 +9,6 @@ SessionLocal = sessionmaker(bind=engine)
 def get_db():
     db = SessionLocal()
     try:
-        yield db # check it online python concept what yield does
+        yield db
     finally:
         db.close()
